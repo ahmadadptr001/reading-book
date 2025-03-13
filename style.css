@@ -92,6 +92,18 @@ body {
       .card-wrapper .container .card-n {
             min-width: 300px;
       }
+      .banner .container span {
+            font-size: 70%;
+      }
+      .banner .container .subscribe {
+            font-size: 60%;
+      }
+      .text-tobe {
+            font-size: 95%;
+      }
+      .text-tobe h2 {
+            font-size: 1.3rem;
+      }
 }
 
 @media (min-width: 576px) {
