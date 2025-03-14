@@ -242,6 +242,7 @@ footer .container-top {
 /* desc html */
 .types-of-books .container ul {
       display: grid;
+      font-size: 90%;
       grid-template-columns: repeat(2, 1fr);
 }
 
