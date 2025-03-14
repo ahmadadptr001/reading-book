@@ -204,10 +204,24 @@ footer .container-top {
       text-underline-offset: 2px;
 }
 
+.more-information span {
+      font-size: 0.9rem;
+}
+
 @media (max-width: 576px) {
       .more-information {
             display: flex;
             flex-direction: column;
+      }
+      .more-information span {
+            order: 3;
+      }
+      .more-information ul:nth-child(1) {
+            background-color: black;
+            order: 1;
+      }
+      .more-information ul:nth-child(2) {
+            order: 2;
       }
 }
 
