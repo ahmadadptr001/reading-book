@@ -142,11 +142,31 @@ body {
       width: 100%;
       border-radius: 0.5rem;
       aspect-ratio: 16/9;
+      filter: grayscale(100);
 }
 
-.card-n .card-header-n .card-image {
+.card-n .card-header-n:hover img {
+      filter: none;
+}
+
+.card-n:hover {
+      transition: 0.5s ease-in-out;
+      transform: translateY(-10px);
+}
+
+.card-n:hover .card-header-n .card-image-hover {
+      opacity: 1;
+}
+.card-n:hover .card-header-n .card-image {
+      opacity: 0;
+}
+
+.card-n .card-header-n .card-image,
+.card-n .card-header-n .card-image-hover {
       position: absolute;
+      transition: 0.5s ease-in-out;
       bottom: 0;
+      display: block;
       left: 50%;
       transform: translate(-50%, 50%);
       width: 40px;
@@ -156,6 +176,9 @@ body {
       padding: 0.3rem;
       border-radius: 50%;
       border: 1px solid gray;
+}
+.card-n .card-header-n .card-image-hover {
+      opacity: 0;
 }
 
 .card-n .card-body-n {
