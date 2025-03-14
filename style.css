@@ -230,11 +230,6 @@ footer .container-top {
             order: 3;
             width: 100%;
       }
-      .more-information ul:nth-child(1) {
-            background-color: black;
-      }
-      .more-information ul:nth-child(2) {
-      }
 }
 
 @media (min-width: 576px) {
@@ -242,4 +237,15 @@ footer .container-top {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr;
       }
+}
+
+/* desc html */
+.types-of-books .container ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.types-of-books .container img {
+      width: 20px;
+      height: 20px;
 }
