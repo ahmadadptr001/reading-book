@@ -103,6 +103,19 @@ body {
       color: rgb(90, 90, 90);
 }
 
+.image-hero img {
+      animation: bounce 1s infinite linear alternate;
+}
+
+@keyframes bounce {
+      from {
+            transform: translateY(-10px);
+      }
+      to {
+            transform: translateY(0);
+      }
+}
+
 .card-wrapper .container .card-n {
       position: relative;
 }
