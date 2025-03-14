@@ -224,17 +224,16 @@ footer .container-top {
 @media (max-width: 576px) {
       .more-information {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
       }
       .more-information span {
             order: 3;
+            width: 100%;
       }
       .more-information ul:nth-child(1) {
             background-color: black;
-            order: 1;
       }
       .more-information ul:nth-child(2) {
-            order: 2;
       }
 }
 
