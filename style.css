@@ -250,3 +250,57 @@ footer .container-top {
       width: 20px;
       height: 20px;
 }
+
+@media (max-width: 576px) {
+      .read-books .container {
+            grid-template-columns: repeat(1, 1fr);
+      }
+}
+@media (min-width: 576px) {
+      .read-books .container {
+            grid-template-columns: repeat(2, 1fr);
+      }
+}
+
+.card-read {
+      position: relative;
+      outline: 1px solid black !important;
+      font-size: 80% !important;
+}
+
+.card-read h2 {
+      font-size: 100%;
+}
+
+.card-read .ring {
+      position: absolute;
+
+      background: white;
+      border: 2px solid black;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+}
+
+.ring-1 {
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+}
+.ring-2 {
+      top: 0;
+      right: 0;
+      transform: translate(50%, -50%);
+}
+
+.ring-3 {
+      bottom: 0;
+      right: 0;
+      transform: translate(50%, 50%);
+}
+
+.ring-4 {
+      bottom: 0;
+      left: 0;
+      transform: translate(-50%, 50%);
+}

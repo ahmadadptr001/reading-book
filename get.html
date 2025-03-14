@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>What's is book?</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+<body>
+   <!-- banner section -->
+   <section class="banner">
+      <div class="container">
+         <span>Berikan dukungan anda dengan mengikuti saluran kami</span>
+         <button class="subscribe" onclick="alertSupport()">
+            subscribe
+         </button>
+      </div>
+      </div>
+   </section>
+
+   <!-- navigation -->
+   <nav class="navigation sticky sticky-top bg-light">
+      <div class="container px-3 d-flex align-items-center justify-content-between justify-content-lg-start">
+         <a class="navbar-brand" href="./">
+            <img src="assets/logo.png" alt="brand image" width="100" height="100">
+         </a>
+
+         <ul class="navbar-menu d-flex gap-3 d-lg-flex d-none">
+            <li class="navbar-menu-item">
+               <a href="./">Homepage</a>
+            </li>
+            <li class="navbar-menu-item">
+               <a href="desc.html">Desc Book</a>
+            </li>
+            <li class="navbar-menu-item">
+               <a href="get.html">Get Book</a>
+            </li>
+         </ul>
+
+         <button class="toggler background-transparent d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#side-bar">
+            <img class="icon-toggler" src="assets/menu-bar.png" width="40" height="40" />
+         </button>
+      </div>
+   </nav>
+
+   <!-- sidebar -->
+   <div id="side-bar" class="offcanvas offcanvas-end">
+      <div class="offcanvas-header">
+         <h4 class="offcanvas-title fw-bold">Sidebar</h3>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body position-relative">
+         <div class="ball ball-purple"></div>
+         <div class="ball ball-pink"></div>
+         <aside class="d-flex gap-2 flex-column">
+            <div class="image-sidebar p-3 d-flex align-items-center justify-content-center">
+               <img style="width: 150px; height: 150px;" src="assets/studying.png" alt="">
+            </div>
+            <span>
+               <a href="./">Homepage</a>
+            </span>
+            <span><a href="desc.html">Desc Book</a></span>
+            <span><a href="get.html">Get Book</a></span>
+         </aside>
+      </div>
+   </div>
+
+   <!-- read-books -->
+   <section class="read-books my-5">
+      <div class="container d-grid gap-5">
+         <div class="card-read p-3">
+            <div class="card-header-read d-flex align-items-center justify-content-center py-5">
+               <img class="w-75"
+                  src="https://cover.komiku.id/wp-content/uploads/2020/12/Komik-Spare-Me-Great-Lord.jpg?resize=450,235&quality=60"
+                  alt="spare me, great lord">
+            </div>
+            <div class="card-body-read p-3">
+               <h4>Spare Me, Great Lord!</h4>
+               <small>Setelah hidup kembali dan mengembalikan energi roh, pria dan wanita melakukan yang terbaik untuk
+                  menangkap setiap helai energi roh dan berlatih, kecuali Lu Shu, dengan Sistem Emosi Negatifnya, ia
+                  menjadi lebih kuat dengan mengejek orang lain! Dia hanya ingin melindungi adik perempuannya, tetapi
+                  perubahan zaman yang tak terhindarkan, maka yang bisa dia lakukan hanyalah … mengejek orang lain
+                  secara sepintas, dan menjadi yang terkuat! Lalu, apakah Anda siap? Di sinilah Lu Shu, ‘Raja Setan
+                  Hebat’ ~</small>
+               <div class="mt-3">
+                  <button class="w-100 rounded btn btn-primary">
+                     <a class="text-dark" href="https://komiku.id/manga/spare-me-great-lord/" target="_blank">Baca
+                        Sekarang</a>
+                  </button>
+               </div>
+            </div>
+         </div>
+         <div class="card-read p-3 bg-warning">
+            <div class="card-header-read d-flex align-items-center justify-content-center py-5">
+               <img class="w-75"
+                  src="https://cover.komiku.id/wp-content/uploads/2024/01/Back-I-Alone-Leveling.jpg?resize=450,235&quality=60"
+                  alt="Solo Leveling">
+            </div>
+            <div class="card-body-read p-3">
+               <h4>Solo Leveling</h4>
+               <small>Seorang Hunter class-E, Sung Jinwoo, hunter terlemah yang pernah ada. Di pandang rendah oleh semua
+                  orang, tidak memiliki uang, skill, dan job yang memadai. Ketika grup petualangnya menemukan dungeon
+                  tersembunyi, dia mendapatkan kesempatan untuk memperbaiki kehidupannya menjadi lebih baik. Namun
+                  kesempatan yang ia dapatkan itu, berbeda dari pada apa yang pernah ia bayangkan</small>
+               <div class="mt-3">
+                  <button class="w-100 rounded btn btn-dark">
+                     <a class="text-light" href="https://komiku.id/manga/solo-leveling-sub-indo/" target="_blank">Baca
+                        Sekarang</a>
+                  </button>
+               </div>
+               <div class="ring ring-1"></div>
+               <div class="ring ring-2"></div>
+               <div class="ring ring-3"></div>
+               <div class="ring ring-4"></div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- footer section -->
+   <footer class="footer my-5">
+      <div class="container container-top">
+         <div class="text-footer p-3" style="min-height: 30vh;" data-aos="fade-right" data-aos-duration="2000">
+            <h2 class="fw-bold">Let's Talk</h2>
+            <small>ahmadadptr@gmail.com</small>
+         </div>
+         <div class="more-information">
+            <span>
+               <p class="mb-1">&copy; ReadingBook, Kendari - 2024. All rights reversed</p>
+            </span>
+
+            <ul>
+               <li><a href="#">Clients</a></li>
+               <li><a href="#">Work</a></li>
+               <li><a href="#">About</a></li>
+            </ul>
+
+            <ul>
+               <li><a href="#">Whatsapp</a></li>
+               <li><a href="#">Instagram</a></li>
+               <li><a href="#">Twitter</a></li>
+            </ul>
+         </div>
+      </div>
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   <script>
+      AOS.init();
+   </script>
+   <script src="./script.js"></script>
+
+</body>
+
+</html>
