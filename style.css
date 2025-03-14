@@ -188,3 +188,32 @@ body {
       text-align: center;
       font-weight: 600;
 }
+
+footer .container-top {
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.more-information {
+      gap: 1rem;
+      align-items: center;
+}
+
+.more-information ul li a {
+      color: gray;
+      text-decoration: underline !important;
+      text-underline-offset: 2px;
+}
+
+@media (max-width: 576px) {
+      .more-information {
+            display: flex;
+            flex-direction: column;
+      }
+}
+
+@media (min-width: 576px) {
+      .more-information {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+      }
+}
